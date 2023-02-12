@@ -27,7 +27,7 @@ public class ProductController {
     @GetMapping("/product/{id}")
     public ResponseEntity<Product> getProductById(@PathVariable("id") int id) {
         try {
-            //check if employee exist in database
+            //check if product exist in database
             Product empObj = getProductRec(id);
 
             if (empObj != null) {
