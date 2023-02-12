@@ -70,7 +70,7 @@ public class ProductController {
     @DeleteMapping("/product/{id}")
     public ResponseEntity<HttpStatus> deleteProductById(@PathVariable("id") int id) {
         try {
-            //check if employee exist in database
+            //check if product exist in database
             Product emp = getProductRec(id);
 
             if (emp != null) {
